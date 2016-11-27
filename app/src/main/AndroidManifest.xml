@@ -20,7 +20,8 @@
         <activity android:name=".Profil" />
         <activity android:name=".AdaugaActivitate" />
         <activity android:name=".Istoric" />
-        <activity android:name=".Despre"></activity>
+        <activity android:name=".Despre" />
+        <activity android:name=".Meniu"></activity>
     </application>
 
 </manifest>
