@@ -50,7 +50,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Trimite"/>
+        android:text="Logare"
+        android:id="@+id/btnLogare"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
