@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FitnessTracker</string>
+    <string name="adauga_activitate_tipul">Tipul</string>
+    <string name="adauga_activitate_denumire">Denumire</string>
+    <string name="adauga_activitate_calorii">Numar Calorii</string>
+    <string name="adauga_activitate_intake">Intake</string>
+    <string name="adauga_activitate_consume">Consume</string>
 </resources>
