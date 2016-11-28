@@ -24,7 +24,8 @@
         <EditText
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:id="@+id/et_nume"/>
+            android:id="@+id/et_nume"
+            android:text="user"/>
 
 
 
@@ -41,7 +42,8 @@
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:id="@+id/et_parola"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:text="parola"/>
 
 
 

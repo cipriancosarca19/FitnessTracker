@@ -1,4 +1,4 @@
-package com.example.cipri.fitnesstracker;
+package com.example.cipri.fitnesstracker.classes;
 
 /**
  * Created by Petruta Deac on 11/27/2016.
