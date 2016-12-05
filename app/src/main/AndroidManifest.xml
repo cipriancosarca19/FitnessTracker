@@ -23,8 +23,7 @@
         <activity android:name=".Despre" />
         <activity android:name=".Meniu" />
         <activity android:name=".Masa" />
-        <activity android:name=".Alimente" />
-        <activity android:name=".ListaActivitatii"></activity>
+        <activity android:name=".Alimente"></activity>
     </application>
 
 </manifest>

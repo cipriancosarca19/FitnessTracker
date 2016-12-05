@@ -56,10 +56,13 @@ public static List<Utilizator> utilizatori=new ArrayList<>();
             @Override
             public void onClick(View v) {
 
-
+                EditText user=(EditText)findViewById(R.id.et_nume);
+                EditText parola=(EditText)findViewById(R.id.et_parola);
+                if (validareUtilizator(user.getText().toString(),parola.getText().toString()))
+                {
                     Intent intent=new Intent(v.getContext(),Meniu.class);
                     startActivity(intent);
-
+                }
 
             }
         });

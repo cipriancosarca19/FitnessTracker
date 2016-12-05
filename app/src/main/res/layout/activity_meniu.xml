@@ -16,8 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="Activitate noua"
-            android:id="@+id/btnActivitateNoua"
-            android:onClick="NavigareActivitati"/>
+            android:id="@+id/btnActivitateNoua"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="50dp"

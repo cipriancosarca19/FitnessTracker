@@ -25,8 +25,8 @@ public class Despre extends AppCompatActivity {
         dezvoltatori.add("Dancu Diana");
 
         ArrayAdapter arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dezvoltatori);
-        //ListView listView=(ListView)findViewById(R.id.listDezvoltatori);
-      //  listView.setAdapter(arrayAdapter);
+        ListView listView=(ListView)findViewById(R.id.listDezvoltatori);
+        listView.setAdapter(arrayAdapter);
 
 
     }
