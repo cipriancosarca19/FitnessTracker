@@ -10,6 +10,7 @@ public class Meniu extends AppCompatActivity {
 
     Button despre;
     Button masa;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +32,11 @@ public class Meniu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+    }
+    public void NavigareActivitati(View view){
+        Intent intent = new Intent(Meniu.this, ListaActivitatii.class);
+        startActivity(intent);
     }
 }
