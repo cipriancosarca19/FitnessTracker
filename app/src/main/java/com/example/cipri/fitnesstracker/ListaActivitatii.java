@@ -21,11 +21,13 @@ public class ListaActivitatii extends AppCompatActivity {
         Activitate activitate1 = new Activitate("Alergare", 200, 1);
         Activitate activitate2 = new Activitate("Sala", 400, 2);
         Activitate activitate3 = new Activitate("Scrima", 340, 3);
+        Activitate activitate4 = new Activitate("Banda", 340, 3);
 
 
         list.add(activitate1);
         list.add(activitate2);
         list.add(activitate3);
+        list.add(activitate4);
 
         ActivitateAdaptor adapter = new ActivitateAdaptor(
                 getApplicationContext(),
