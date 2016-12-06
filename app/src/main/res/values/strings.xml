@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FitnessTracker</string>
+    <string name="alimenteleTale">Your food</string>
+    <string name="mancare">New Food</string>
+    <string name="trimite">Trimite</string>
+    <string name="nume">Nume</string>
 </resources>
