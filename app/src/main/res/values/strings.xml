@@ -5,4 +5,8 @@
     <string name="adauga_activitate_calorii">Numar Calorii</string>
     <string name="adauga_activitate_intake">Intake</string>
     <string name="adauga_activitate_consume">Consume</string>
+    <string name="alimenteleTale">Your food</string>
+    <string name="mancare">New Food</string>
+    <string name="trimite">Trimite</string>
+    <string name="nume">Nume</string>
 </resources>
