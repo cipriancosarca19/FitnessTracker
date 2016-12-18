@@ -10,7 +10,6 @@ public class Meniu extends AppCompatActivity {
 
     Button despre;
     Button masa;
-    Button site;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +31,5 @@ public class Meniu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        site=(Button)findViewById(R.id.btnFitnessTrackerSite);
-        site.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(v.getContext(),FitnessTrackerSite.class);
-                startActivity(intent);
-            }
-        });
     }
 }
-

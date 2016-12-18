@@ -23,11 +23,14 @@ public class AdapterAlimente extends BaseAdapter{
     private List<String> denumiri;
     private List<Integer> calorii;
 
-    public AdapterAlimente(Alimente alimente, List<String> denumiri,List<Integer> calorii)
+    public AdapterAlimente(Alimente alimente, List<Aliment> listaAlimente)
     {
         context=alimente;
-        denumiri=denumiri;
-        calorii=calorii;
+        for (Aliment a:listaAlimente)
+        {
+            denumiri.add(a.getDenumire());
+            calorii.add(a.getCalorii());
+        }
         inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
     }
