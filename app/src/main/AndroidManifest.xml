@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cipri.fitnesstracker">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +24,7 @@
         <activity android:name=".Despre" />
         <activity android:name=".Meniu" />
         <activity android:name=".Masa" />
-        <activity android:name=".Alimente"></activity>
+        <activity android:name=".FitnessTrackerSite"></activity>
     </application>
 
 </manifest>
