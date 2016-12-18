@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Alimente extends AppCompatActivity {
 
-    public static List<Aliment> alimente;
+    public static List<Aliment> alimente=new ArrayList<>();
     ListView lv;
     Context context;
 
@@ -20,23 +20,14 @@ public class Alimente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alimente);
-
-
-        alimente=new ArrayList<Aliment>();
         alimente.add(new Aliment("Banana",200,200));
         alimente.add(new Aliment("Apple",200,200));
         alimente.add(new Aliment("Berry",200,200));
 
-        lv=(ListView)findViewById(R.id.listaAlimente);
-        List<String> denumiri=new ArrayList<String>();
-        List<Integer> calorii=new ArrayList<Integer>();
-        for (Aliment a:alimente)
-        {
-            denumiri.add(a.getDenumire().toString());
-            calorii.add(a.getCalorii());
-        }
+
+        lv=(ListView)findViewById(R.id.lista_alimente);
         context=this;
-        lv.setAdapter(new AdapterAlimente(this,denumiri,calorii));
+        lv.setAdapter(new AdapterAlimente(this,alimente));
 
 
 
