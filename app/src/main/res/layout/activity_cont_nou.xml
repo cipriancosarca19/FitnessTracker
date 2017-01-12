@@ -19,10 +19,14 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Nume"
+
+            
             android:textColor="#FF0A8D"
             android:textSize="17dp"
             android:textStyle="bold"
+            android:text="@string/nume"
+            android:id="@+id/tvNumeUtilizator"
+
             />
 
         <EditText
@@ -116,7 +120,7 @@
         <EditText
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:id="@+id/ed_inaltime"/>
+            android:id="@+id/et_inaltime"/>
 
     </LinearLayout>
     <LinearLayout
@@ -132,7 +136,7 @@
         <EditText
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:id="@+id/ed_greutate"/>
+            android:id="@+id/et_greutate"/>
 
     </LinearLayout>
     <LinearLayout
@@ -148,7 +152,7 @@
         <EditText
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:id="@+id/ed_nickname"/>
+            android:id="@+id/et_nickname"/>
 
     </LinearLayout>
     <LinearLayout
@@ -164,10 +168,12 @@
         <EditText
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:id="@+id/etParola"/>
 
     </LinearLayout>
     <Button
+
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:textAllCaps="false"
@@ -180,6 +186,11 @@
         android:shadowDy="-3"
         android:shadowRadius="11"
         android:layout_margin="10dp"
-        android:text="Trimite"/>
+       
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/trimite"
+        android:id="@+id/btnTrimite"/>
+
 
 </LinearLayout>

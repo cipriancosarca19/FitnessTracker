@@ -10,6 +10,7 @@ public class Meniu extends AppCompatActivity {
 
     Button despre;
     Button masa;
+    Button activitati;
     Button site;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,14 @@ public class Meniu extends AppCompatActivity {
             }
         });
 
+        activitati=(Button)findViewById(R.id.btnActivitateNoua);
+        activitati.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(v.getContext(),ListaActivitatii.class);
+                startActivity(intent);
+            }
+        });
         site=(Button)findViewById(R.id.btnFitnessTrackerSite);
         site.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +50,6 @@ public class Meniu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
-
