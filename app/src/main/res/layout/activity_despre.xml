@@ -9,21 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="@drawable/img"
     tools:context="com.example.cipri.fitnesstracker.Despre">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aplicatia Fitness Tracker este o aplicatie mobile special creata pentru a oferi utilizatorilor o modalitate facila de a tine evidenta activitatilor personale, atat prin monitorizarea alimentatiei cat si a efortului depus zilnic.De asemenea utilizatorul poate apela si la informatiile oferite de site-ul aplicatiei:www.fitnessTracker.ro"/>
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Lista Dezvoltatori"
-        android:textColor="#000000"
-        android:layout_marginTop="20dp"
-    android:textAlignment="center"
-    android:textStyle="bold"/>
+        android:text="Aplicatia Fitness Tracker este o aplicatie mobile special creata pentru a oferi utilizatorilor o modalitate facila de a tine o evidenta al activitatilor personale"/>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
