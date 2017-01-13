@@ -12,6 +12,7 @@ public class Meniu extends AppCompatActivity {
     Button masa;
     Button activitati;
     Button site;
+    Button status;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +51,13 @@ public class Meniu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        status=(Button)findViewById(R.id.btnStatus);
+        status.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(v.getContext(),Istoric.class);
+                startActivity(intent);
+            }
+        });
     }
 }

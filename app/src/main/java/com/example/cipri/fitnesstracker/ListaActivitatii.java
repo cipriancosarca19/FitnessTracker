@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaActivitatii extends AppCompatActivity {
-    List<Activitate> list = new ArrayList<>();
+   static   List<Activitate> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

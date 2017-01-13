@@ -11,4 +11,12 @@
     tools:context="com.example.cipri.fitnesstracker.Istoric"
     android:background="@drawable/img_background">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar chart" />
+    <com.example.cipri.fitnesstracker.classes.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/barChart"/>
 </RelativeLayout>
