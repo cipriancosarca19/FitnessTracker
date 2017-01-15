@@ -16,15 +16,14 @@ public class Istoric extends AppCompatActivity {
 
     protected void onStart() {
         super.onStart();
-ListaActivitatii.list.get(1).getCalorii();
-        BarChart chart = (BarChart)findViewById(R.id.barChart);
-        chart.addValue(ListaActivitatii.list.get(1).getCalorii());
-        chart.addValue(2);
-        chart.addValue(6);
-        chart.addValue(8);
-        chart.addValue(4);
-        chart.addValue(9);
-        chart.invalidate();
+
+        BarChart chart = (BarChart) findViewById(R.id.barChart);
+        for (int i = 0; i < ListaActivitatii.list.size(); i++) {
+
+            chart.addValue(ListaActivitatii.list.get(i).getCalorii());
+
+
+        }
     }
 
 }

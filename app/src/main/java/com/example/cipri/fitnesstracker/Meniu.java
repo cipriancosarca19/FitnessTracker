@@ -13,6 +13,7 @@ public class Meniu extends AppCompatActivity {
     Button activitati;
     Button site;
     Button status;
+    Button activ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class Meniu extends AppCompatActivity {
         activitati.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(v.getContext(),ListaActivitatii.class);
+                Intent intent=new Intent(v.getContext(),AdaugaActivitate.class);
                 startActivity(intent);
             }
         });
@@ -56,6 +57,15 @@ public class Meniu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(v.getContext(),Istoric.class);
+                startActivity(intent);
+            }
+        });
+
+        activ=(Button)findViewById(R.id.btnListaActivitati);
+        activ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(v.getContext(),ListaActivitatii.class);
                 startActivity(intent);
             }
         });

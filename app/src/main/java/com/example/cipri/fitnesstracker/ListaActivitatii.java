@@ -1,6 +1,7 @@
 package com.example.cipri.fitnesstracker;
 
-import android.content.res.Resources;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -24,10 +25,18 @@ public class ListaActivitatii extends AppCompatActivity {
         Activitate activitate4 = new Activitate("Banda", 340, 3);
 
 
-        list.add(activitate1);
-        list.add(activitate2);
-        list.add(activitate3);
-        list.add(activitate4);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if(!prefs.getBoolean("firstTime", false)) {
+
+            list.add(activitate1);
+            list.add(activitate2);
+            list.add(activitate3);
+            list.add(activitate4);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstTime", true);
+            editor.commit();
+        }
+
 
         ActivitateAdaptor adapter = new ActivitateAdaptor(
                 getApplicationContext(),
@@ -39,4 +48,5 @@ public class ListaActivitatii extends AppCompatActivity {
                 (ListView)findViewById(R.id.activity_lista_activitatii);
         listView.setAdapter(adapter);
     }
+
 }

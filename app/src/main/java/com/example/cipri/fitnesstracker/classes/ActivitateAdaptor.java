@@ -41,9 +41,9 @@ public class ActivitateAdaptor extends ArrayAdapter<Activitate> {
             TextView textcalorii=(TextView)convertView.findViewById(R.id.textCalorii);
             TextView textdurata=(TextView)convertView.findViewById(R.id.textDurata);
 
-            textdescriere.setText(a.getDenumire());
-            textcalorii.setText(a.getCalorii()+"  ");
-            textdurata.setText(a.getDurata()+"");
+            textdescriere.setText("    "+a.getDenumire());
+            textcalorii.setText("    "+a.getCalorii()+"  ");
+            textdurata.setText("     "+a.getDurata()+"");
 
             return convertView;
 

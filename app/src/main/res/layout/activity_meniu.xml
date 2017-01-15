@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_meniu"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingBottom="150dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -29,7 +29,24 @@
             android:shadowRadius="11"
             android:layout_margin="10dp"
             android:id="@+id/btnActivitateNoua"/>
-        <Button
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Lista Activitati"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#2DB5C4"
+        android:shadowDx="-1"
+        android:shadowDy="-3"
+        android:shadowRadius="11"
+        android:layout_margin="10dp"
+        android:id="@+id/btnListaActivitati"/>
+
+    <Button
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:textAllCaps="false"
@@ -91,12 +108,5 @@
         android:text="FitnessTrackerSite"
         android:id="@+id/btnFitnessTrackerSite"/>
 
-
-
-    <Button
-          android:layout_width="wrap_content"
-           android:layout_height="50dp"
-            android:text="FitnessTrackerSite"
-            android:id="@+id/btnFitnessTrackerSite"/>
 
 </LinearLayout>
